@@ -36,12 +36,12 @@ export default function RootLayout({
             <div className="logo">
               <h1 className="logo-title">
                 <b>
-                  <i>LOGO HERE</i>
+                  LOGO HERE
                 </b>
               </h1>
               <p className="logo-description">
                 <b>
-                  <i>Computer system store</i>
+                  Computer system store
                 </b>
               </p>
             </div>

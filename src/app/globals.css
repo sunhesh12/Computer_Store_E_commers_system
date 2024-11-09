@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -207,4 +208,17 @@ body::-webkit-scrollbar-track {
   width: 110%;
   background: linear-gradient(to right, green 30%, black 100%);
   transition: background 4s ease-in-out;
+}
+
+
+.bg-bk-red{
+  background-color: red;
+}
+
+.bg-w{
+  width: 100vw;
+}
+
+.bg-h{
+  height: 100vh;
 }
