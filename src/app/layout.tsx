@@ -48,22 +48,22 @@ export default function RootLayout({
             <div className="Navigation">
               <ul>
                 <li>
-                  <Link href={"/customer/home"} className="linkofNav">
+                  <Link href={"/home"} className="linkofNav">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/customer/about"} className="linkofNav">
+                  <Link href={"/about"} className="linkofNav">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/customer/services"} className="linkofNav">
+                  <Link href={"/services"} className="linkofNav">
                     Service
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/customer/contact"} className="linkofNav">
+                  <Link href={"/contact"} className="linkofNav">
                     Contact
                   </Link>
                 </li>
@@ -105,9 +105,7 @@ export default function RootLayout({
           </div>
           {children}
           <div className="footer">
-            <h1>
-              This Project Done by Group 05.
-            </h1>
+            <h1>This Project Done by Group 05.</h1>
           </div>
         </div>
       </body>
