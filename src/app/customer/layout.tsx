@@ -1,16 +1,25 @@
-import SideNavbar from '../component/sideNavBar';
+import SideNavbar from "../component/sideNavBar";
 
 export default function customerLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const Products = [];
+
+  while (Products.length < 20) {
+    Products.push({ src: "/asus.png", text: "ASUS ROG" });
+  }
   return (
     <>
       <div className="container">
         <div className="sideNav">
-          {Array.from({ length: 10 }).map((_, index) => (
-            <SideNavbar key={index} src="/asus.png" text={`ASUS ROG ${index + 1}`} />
+          {Products.map((Products, index) => (
+            <SideNavbar
+              key={index}
+              src={Products.src}
+              text={Products.text}
+            />
           ))}
         </div>
         <div className="contain">{children}</div>

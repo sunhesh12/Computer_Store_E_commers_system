@@ -31,76 +31,84 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-      <div className="wrapper">
-        <div className="item">
-          <div className="logo">
-            <h1 className="logo-title">
-              <b>
-                <i>LOGO HERE</i>
-              </b>
+        <div className="wrapper">
+          <div className="item">
+            <div className="logo">
+              <h1 className="logo-title">
+                <b>
+                  <i>LOGO HERE</i>
+                </b>
+              </h1>
+              <p className="logo-description">
+                <b>
+                  <i>Computer system store</i>
+                </b>
+              </p>
+            </div>
+            <div className="Navigation">
+              <ul>
+                <li>
+                  <Link href={"/customer/home"} className="linkofNav">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link href={"/customer/about"} className="linkofNav">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link href={"/customer/services"} className="linkofNav">
+                    Service
+                  </Link>
+                </li>
+                <li>
+                  <Link href={"/customer/contact"} className="linkofNav">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="navEnd">
+              <div className="searchDiv">
+                <Image
+                  style={{ width: "70%", height: "50%" }}
+                  src={curtIcon}
+                  alt=""
+                />
+                <div className="notitficationNumber">
+                  <span>
+                    <h4 className="notitficationNumberText">9</h4>
+                  </span>
+                </div>
+              </div>
+              <div className="searchDiv">
+                <Image
+                  style={{ width: "70%", height: "50%" }}
+                  src={notificatioIcon}
+                  alt=""
+                />
+                <div className="notitficationNumber">
+                  <span>
+                    <h4 className="notitficationNumberText">9</h4>
+                  </span>
+                </div>
+              </div>
+              <div className="searchDiv">
+                <Image
+                  style={{ width: "70%", height: "50%" }}
+                  src={img}
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          {children}
+          <div className="footer">
+            <h1>
+              This Project Done by Group 05.
             </h1>
-            <p className="logo-description">
-              <b>
-                <i>Computer system store</i>
-              </b>
-            </p>
           </div>
-          <div className="Navigation">
-            <ul>
-              <li>
-                <Link href={"/"} className="linkofNav">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href={"/custome/about"} className="linkofNav">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href={""} className="linkofNav">
-                  Service
-                </Link>
-              </li>
-              <li>
-                <Link href={""} className="linkofNav">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="navEnd">
-            <div className="searchDiv">
-              <Image
-                style={{ width: "90%", height: "70%" }}
-                src={curtIcon}
-                alt=""
-              />
-              <div className="notitficationNumber">
-                <span>
-                  <h2 className="notitficationNumberText">9</h2>
-                </span>
-              </div>
-            </div>
-            <div className="searchDiv">
-              <Image
-                style={{ width: "90%", height: "70%" }}
-                src={notificatioIcon}
-                alt=""
-              />
-              <div className="notitficationNumber">
-                <span>
-                  <h2 className="notitficationNumberText">9</h2>
-                </span>
-              </div>
-            </div>
-            <div className="searchDiv" style={{marginRight: "18px"}}>
-              <Image style={{ width: "90%", height: "70%" }} src={img} alt="" />
-            </div>
-          </div>
-        </div>
-        {children}
-        <div className="footer"></div>
         </div>
       </body>
     </html>

@@ -1,0 +1,76 @@
+.Mainwrapper {
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  display: block;
+}
+
+.imageChnageDiv {
+  width: 100%;
+  height: 80vh;
+  /* background-color: blue; */
+}
+
+.curtDiv {
+  margin: 2%;
+  width: calc(100% / 8);
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.24);
+  display: block;
+}
+
+.CurtContainer {
+  overflow: auto;
+  display: flex;
+  width: auto;
+  height: auto;
+  /* background-color: red; */
+}
+
+/* Target the scrollbar for the body */
+.CurtContainer::-webkit-scrollbar {
+  width: 0px; /* Width of the vertical scrollbar */
+  height: 5px; /* Height of the horizontal scrollbar */
+}
+
+.CurtContainer::-webkit-scrollbar-thumb {
+  background-color: #00000025; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.CurtContainer::-webkit-scrollbar-thumb:hover {
+  background-color: #525252; /* Color when hovered */
+}
+
+.CurtContainer::-webkit-scrollbar-track {
+  background: #00000000; /* Background of the scrollbar track */
+}
+
+.imageIcon {
+  width: 100%;
+  height: 50%;
+  /* background-color: red; */
+}
+
+.curtDiv:hover {
+  background: linear-gradient(to Top, black 20%, green 100%);
+}
+
+.Description {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.318);
+}
+
+.Description p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 90%;
+}

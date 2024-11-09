@@ -1,30 +1,48 @@
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-body{
+body {
   background-color: black;
   overflow-x: hidden;
 }
 
-.wrapper{
+/* Target the scrollbar for the body */
+body::-webkit-scrollbar {
+  width: 0px; /* Width of the vertical scrollbar */
+  height: 5px; /* Height of the horizontal scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000000; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #000000; /* Color when hovered */
+}
+
+body::-webkit-scrollbar-track {
+  background: #000000; /* Background of the scrollbar track */
+}
+
+.wrapper {
   display: flex;
   flex-direction: column;
-  justify-content:start;
+  justify-content: start;
   min-height: 100vh;
 }
 
-.item{
-  background:linear-gradient(to right , rgb(3, 126, 15)  , rgb(0, 0, 0) );
+.item {
+  background: linear-gradient(to right, rgb(3, 126, 15), rgb(0, 0, 0));
   width: 100vw;
   height: 60px;
   display: flex;
 }
 
-.logo{
+.logo {
   width: 15%;
   height: 100%;
   color: white;
@@ -62,14 +80,13 @@ body{
   }
 }
 
-
-.Navigation{
+.Navigation {
   width: 70%;
   height: 100%;
   /* background-color: blue; */
 }
 
-.navEnd{
+.navEnd {
   width: 15%;
   height: 100%;
   /* background-color: rgb(147, 78, 78); */
@@ -78,9 +95,8 @@ body{
   justify-content: right;
 }
 
-.searchDiv{
+.searchDiv {
   width: 20%;
-  
   height: 100%;
   justify-content: center;
   background-color: rgb(3, 126, 15);
@@ -88,7 +104,7 @@ body{
   align-items: center;
 }
 
-.Navigation ul{
+.Navigation ul {
   width: 80%;
   height: 100%;
   display: flex;
@@ -97,23 +113,21 @@ body{
   align-items: center;
   /* justify-content: center; */
   justify-items: center;
-
 }
 
-.Navigation ul li{
-  width: calc(100% /5);
+.Navigation ul li {
+  width: calc(100% / 5);
 }
 
-.linkofNav{
+.linkofNav {
   text-decoration: none;
   font-weight: bold;
   color: rgb(255, 255, 255);
   font-size: 130%;
-
 }
 
-.linkofNav:hover{
-  color:rgb(255, 208, 0);
+.linkofNav:hover {
+  color: rgb(255, 208, 0);
   font-size: 150%;
   /* box-shadow: 5px 10px 20px red */
 }
@@ -123,9 +137,9 @@ body{
   height: 100%;
 } */
 
-.notitficationNumber{
-  width: 2%;
-  height: 5%;
+.notitficationNumber {
+  width: 1.5%;
+  height: 3.5%;
   position: absolute;
   background-color: rgba(161, 7, 7, 0.832);
   margin-left: 1%;
@@ -133,51 +147,64 @@ body{
   border-radius: 100%;
 }
 
-.notitficationNumberText{
+.notitficationNumberText {
   color: white;
   text-align: center;
   justify-items: center;
   align-items: center;
-
 }
 
-.footer{
-
-  background:linear-gradient(to right , rgb(58, 58, 58)  , rgb(0, 0, 0) );
+.footer {
+  background: linear-gradient(to right, rgb(58, 58, 58), rgb(0, 0, 0));
   width: 100vw;
   height: 60px;
   display: flex;
+  align-items: center;
 }
 
-.container{
+.footer h1{
+  color: rgb(95, 92, 92);
+  
+}
+
+.container {
   display: flex;
-
 }
 
-.sideNav{
+.sideNav {
   width: 15%;
   /* background-color: rgb(255, 0, 0); */
 }
 
-.contain{
+.contain {
   width: 85%;
   /* height: 50px; */
   /* background-color: rgb(0, 255, 0); */
 }
 
-.SideNavBar{
+.SideNavBar {
   width: 100%;
-  background-color: rgba(20, 63, 3, 0.377);
-  color:white;
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.377);
+  color: white;
+  /* padding: 10px; */
   display: flex;
   align-items: center;
-  
-
 }
 
-.SideNavBar:hover {
+.SideNavBarItem {
+  width: 100%;
+  height: 90%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: rgba(255, 255, 255, 0.113);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin: 2.5px;
+}
+
+.SideNavBarItem:hover {
   width: 110%;
   background: linear-gradient(to right, green 30%, black 100%);
-  transition:background  4s ease-in-out; 
+  transition: background 4s ease-in-out;
 }
