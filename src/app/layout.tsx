@@ -30,7 +30,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      {/* className={`${geistSans.variable} ${geistMono.variable}`} */}
+      <body >
         <div className="wrapper">
           <div className="item">
             <div className="logo">
@@ -48,24 +49,32 @@ export default function RootLayout({
             <div className="Navigation">
               <ul>
                 <li>
+                  <div className="liwrapper">
                   <Link href={"/home"} className="linkofNav">
                     Home
                   </Link>
+                  </div>
                 </li>
                 <li>
+                <div className="liwrapper">
                   <Link href={"/about"} className="linkofNav">
                     About
                   </Link>
+                  </div>
                 </li>
                 <li>
+                <div className="liwrapper">
                   <Link href={"/services"} className="linkofNav">
                     Service
                   </Link>
+                  </div>
                 </li>
                 <li>
+                <div className="liwrapper">
                   <Link href={"/contact"} className="linkofNav">
                     Contact
                   </Link>
+                  </div>
                 </li>
               </ul>
             </div>

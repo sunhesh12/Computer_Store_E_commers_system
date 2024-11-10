@@ -1,21 +1,46 @@
 .Mainwrapper {
   width: 100%;
   height: 100%;
-  /* background-color: red; */
   display: block;
+}
+
+.imageAndDataWrapper{
+  width: 100vw;
+  height: 80vh;
+  position: relative;
 }
 
 .imageChnageDiv {
   width: 100%;
-  height: 80vh;
-  /* background-color: blue; */
+  height: 100%;
+  background-color: red;
+  position: absolute;
+
+}
+
+.mainWrapper{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  /* height: 500px; */
+  /* background-color: red; */
+}
+
+.writeClick{
+  width: 20%;
+  /* height: 100%; */
+  height: 100px;
+  border-radius: 100%;
+  background-color: var(--mylightGray);
 }
 
 .curtDiv {
   margin: 2%;
-  width: calc(100% / 8);
-  height: 300px;
-  background-color: rgba(255, 255, 255, 0.24);
+  /* margin-left: ; */
+  /* width: calc(100% / 6); */
+  min-width: calc(88%/3);
+  height: 400px;
+  background-color: var(--mylightGray);
   display: block;
 }
 
@@ -24,6 +49,7 @@
   display: flex;
   width: auto;
   height: auto;
+  /* flex-wrap:initial; */
   /* background-color: red; */
 }
 
@@ -34,26 +60,26 @@
 }
 
 .CurtContainer::-webkit-scrollbar-thumb {
-  background-color: #00000025; /* Color of the scrollbar thumb */
+  background-color: var(--myblack); /* Color of the scrollbar thumb */
   border-radius: 10px; /* Rounded corners */
 }
 
 .CurtContainer::-webkit-scrollbar-thumb:hover {
-  background-color: #525252; /* Color when hovered */
+  background-color: var(--mylightGray); /* Color when hovered */
 }
 
 .CurtContainer::-webkit-scrollbar-track {
-  background: #00000000; /* Background of the scrollbar track */
+  background: var(--myblack); /* Background of the scrollbar track */
 }
 
 .imageIcon {
   width: 100%;
   height: 50%;
-  /* background-color: red; */
 }
 
 .curtDiv:hover {
-  background: linear-gradient(to Top, black 20%, green 100%);
+  background: linear-gradient(to Top, var(--myblack) 20%, var(--mygreen) 100%);
+  
 }
 
 .Description {
@@ -63,7 +89,7 @@
   align-items: center;
   width: 100%;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.318);
+  background-color: var(--mylightGray);
 }
 
 .Description p {
@@ -71,6 +97,31 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-size: 90%;
+  color: var(--myWhite);
+  font-size: 80%;
+}
+
+
+
+.imageIcon {
+  transition: transform 0.3s ease; 
+}
+
+.imageIcon:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.imageIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.curtDiv {
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Add opacity transition */
+}
+
+.curtDiv:hover {
+  transform: scale(1.1);
+  opacity: 0.8; /* Slight fade effect */
 }

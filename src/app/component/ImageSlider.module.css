@@ -1,0 +1,92 @@
+.imageChangeDiv {
+  position: relative;
+  width: 100%; /* Container width */
+  height: 80vh; /* Fixed container height */
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom, 
+    rgba(0, 0, 0, 0) 10%, /* Transparent at 70% height */
+    rgba(0, 0, 0, 1) 80% /* Fade to semi-transparent black at bottom */
+  );
+  pointer-events: none; /* Allow clicks through the overlay */
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to left, 
+    rgba(0, 0, 0, 0) 1%, /* Transparent at 70% height */
+    rgba(0, 0, 0, 1) 90% /* Fade to semi-transparent black at bottom */
+  );
+  pointer-events: none; /* Allow clicks through the overlay */
+}
+
+
+
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.HeadTag{
+  /* background-color: rgba(255, 0, 0, 0.527);  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /*Allow clicks through the overlay*/
+  
+}
+
+.TextDiv{
+  width: 50%;
+  height: 60px;
+  color: rgb(from hsl(0, 0%, 100%) r g b) ;
+  /* background-color: aliceblue; */
+  position: relative; 
+  left: 50px; 
+  top: 75px;
+
+}
