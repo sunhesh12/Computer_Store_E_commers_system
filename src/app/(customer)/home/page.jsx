@@ -52,11 +52,8 @@ export default function Page() {
   //         middleProduct.offsetLeft -
   //         container.offsetWidth / 2 +
   //         middleProduct.offsetWidth / 2,
-<<<<<<< HEAD
   //       behavior: "smooth",f
-=======
   //       behavior: "smooth",
->>>>>>> 0022827e53fb3b7b5a48081065424acfdbca4451
   //     });
   //   }
   // }, [product]);
