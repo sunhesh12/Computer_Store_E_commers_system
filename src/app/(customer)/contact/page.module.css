@@ -16,3 +16,16 @@
   height: 80%;
 }
 
+.dataRaw{
+  width: 100%;
+  height: auto;
+  padding:5%;
+  background-color: red;
+}
+
+.textField{
+  width: 100%;
+  height: 50px;
+  background-color: green;
+}
+
