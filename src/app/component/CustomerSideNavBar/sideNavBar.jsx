@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import React from "react";
 import Image from "next/image";
-import useHover from '../component/useHover'; // Adjust path based on folder structure
+import useHover from '../../component/useHover'; // Adjust path based on folder structure
 
 export default function SideNavBar({ src, text }) {
 
@@ -38,22 +38,3 @@ export default function SideNavBar({ src, text }) {
     </div>
   );
 }
-
-
-
-// import SideNavBar from './SideNavBar';
-
-// export default function ParentComponent() {
-//   const items = [
-//     { src: '/image1.png', text: 'Item 1' },
-//     { src: '/image2.png', text: 'Item 2' },
-//   ];
-
-//   return (
-//     <div>
-//       {items.map((item, index) => (
-//         <SideNavBar key={index} src={item.src} text={item.text} index={index} />
-//       ))}
-//     </div>
-//   );
-// }

@@ -4,59 +4,25 @@
   display: block;
 }
 
-.imageAndDataWrapper{
-  width: 100vw;
-  height: 80vh;
-  position: relative;
-}
-
-.imageChnageDiv {
-  width: 100%;
-  height: 100%;
-
-  /* background-color: red; */
-  background-color: red;
-
-  position: absolute;
-
-}
-
-.mainWrapper{
+.mainWrapper {
   display: flex;
-  width: 100%;
+  justify-content: space-between; 
+  width: auto;
+  height: 500px;
   align-items: center;
-  /* height: 500px; */
   /* background-color: red; */
-}
-
-.writeClick{
-  width: 20%;
-  /* height: 100%; */
-  height: 100px;
-  border-radius: 100%;
-  background-color: var(--mylightGray);
-}
-
-.curtDiv {
-  margin: 2%;
-  /* margin-left: ; */
-  /* width: calc(100% / 6); */
-  min-width: calc(88%/3);
-  height: 400px;
-  background-color: var(--mylightGray);
-  display: block;
 }
 
 .CurtContainer {
+  width: calc(100vw - 200px);
+  /* background-color: blue; */
+  overflow-y:hidden;
   overflow: auto;
   display: flex;
-  width: auto;
-  height: auto;
-  /* flex-wrap:initial; */
-  /* background-color: red; */
+  align-items: center; 
+  height: 100%; 
 }
 
-/* Target the scrollbar for the body */
 .CurtContainer::-webkit-scrollbar {
   width: 0px; /* Width of the vertical scrollbar */
   height: 5px; /* Height of the horizontal scrollbar */
@@ -75,56 +41,35 @@
   background: var(--myblack); /* Background of the scrollbar track */
 }
 
-.imageIcon {
-  width: 100%;
-  height: 50%;
+.imageAndDataWrapper {
+  width: 100vw;
+  height: 80vh;
+  position: relative;
 }
 
-.curtDiv:hover {
-  background: linear-gradient(to Top, var(--myblack) 20%, var(--mygreen) 100%);
-  
+.imageChangeDiv {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; /* Ensure it's positioned at the top */
+  left: 0; /* Ensure it's positioned at the left */
 }
 
-.Description {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 40px;
+
+.writeClick {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Consistent circular shape */
   background-color: var(--mylightGray);
-}
-
-.Description p {
   display: flex;
-  text-align: center;
+  min-width: 100px;
+  min-height: 100px;
   justify-content: center;
-  align-items: center;
-  color: var(--myWhite);
-  font-size: 80%;
+  align-items: center; /* Center any content inside */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 
-
-
-.imageIcon {
-  transition: transform 0.3s ease; 
-}
-
-.imageIcon:hover {
-  transform: scale(1.1); /* Slight zoom effect */
-}
-
-.imageIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.curtDiv {
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Add opacity transition */
-}
-
-.curtDiv:hover {
-  transform: scale(1.1);
-  opacity: 0.8; /* Slight fade effect */
+.writeClick:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
 }

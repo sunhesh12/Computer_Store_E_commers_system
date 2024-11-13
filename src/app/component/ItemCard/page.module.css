@@ -1,0 +1,67 @@
+.curtDiv {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add opacity transition */
+    width: 300px; /* Set a fixed width */
+    height: 400px; /* Set a fixed height */
+    background-color: var(--mylightGray);
+    border-radius: 10px; /* Optional: rounded corners */
+    overflow: hidden; /* Prevent content overflow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px; /* Set uniform left and right margins */
+    justify-content: space-between;
+    padding-bottom: 30px;
+    box-shadow: 0 4px 8px var(--mylightGray); /* Optional: shadow for better visibility */
+  }
+  
+  
+  .curtDiv:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    opacity: 0.8; /* Slight fade effect */
+    background: linear-gradient(to top, var(--myblack) 20%, var(--mygreen) 100%);
+    transform: scale(1.03); /* Slightly enlarge card on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }
+
+
+  
+  .imageIcon img {
+    max-width: 100%; /* Ensure the image fits within the card */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .imageIcon {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .imageIcon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+
+  .Description {
+    text-align: center; /* Center text inside */
+    /* margin-top: 10px; */
+    font-size: 1rem; /* Optional: increase text size for better visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: var(--mylightGray);
+    padding: 5px;
+  }
+  
+  .Description p {
+    color: var(--myWhite);
+    font-size: 80%;
+    margin: 0; /* Remove default margins for p */
+  }
+  
+  

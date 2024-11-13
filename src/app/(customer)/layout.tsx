@@ -1,4 +1,4 @@
-import SideNavbar from "../component/sideNavBar";
+import SideNavbar from "../component/CustomerSideNavBar/sideNavBar";
 
 export default function customerLayout({
   children,
