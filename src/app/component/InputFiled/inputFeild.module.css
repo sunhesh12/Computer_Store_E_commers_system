@@ -1,22 +1,3 @@
-.WrapperContact {
-  width: 100%;
-  height: auto;
-  /* background-color: red; */
-}
-
-.mapDiv {
-  width: 100%;
-  height: 80vh;
-  /* background-color: green; */
-}
-
-.mapFram {
-  margin: 5%;
-  width: 90%;
-  height: 80%;
-}
-
-/* From Uiverse.io by AbanoubMagdy1 */
 .wavegroup {
   width: 90%;
   position: relative;
@@ -42,7 +23,7 @@
 }
 
 .wavegroup .label {
-  color:var(--myWhite);
+  color: var(--myWhite);
   font-size: 18px;
   font-weight: normal;
   position: absolute;
@@ -62,7 +43,7 @@
 .wavegroup .input:valid ~ label .labelchar {
   transform: translateY(-20px);
   font-size: 14px;
-  color:var(--myYellow);
+  color: var(--myYellow);
 }
 
 .wavegroup .bar {
@@ -73,7 +54,7 @@
 
 .wavegroup .bar:before,
 .wavegroup .bar:after {
-  content: '';
+  content: "";
   height: 2px;
   width: 0;
   /* bottom: 1px; */
@@ -95,6 +76,38 @@
   width: 80%;
 }
 
+/* Style for invalid input */
+.invalid {
+  border-color: red;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Input field style */
+.input {
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  background-color: transparent;
+}
+
+/* Label and other styles */
+.label {
+  color: #999;
+  font-size: 18px;
+}
+
+/* Other necessary styles for the wavegroup effect */
+.wavegroup {
+  position: relative;
+}
+
 /* Optional: Adding responsiveness */
 @media (max-width: 480px) {
   .wavegroup .input {
@@ -107,4 +120,3 @@
     width: 100%; /* Adjust for smaller screens */
   }
 }
-

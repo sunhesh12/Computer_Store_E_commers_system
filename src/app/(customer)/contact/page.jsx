@@ -1,8 +1,8 @@
 import React from "react";
 import style from "./page.module.css";
+import InputField from "@/app/component/InputFiled/InputField";
 
 export default function page() {
-  
   return (
     <>
       <div className={style.WrapperContact}>
@@ -16,13 +16,13 @@ export default function page() {
             // referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div>
-          {/* <h1>hello</h1> */}
+        
+        <div style={{ alignItems: "center", justifyItems: "center" }}>
+          <InputField text="Your Name" type="text"/>
+          <InputField text="Your Email" type="email"/>
+          <InputField text="Your Mobile Number" type="mobile"/>
         </div>
 
-        <div className={style.dataRaw}>
-          <div className={style.textField}></div>
-        </div>
       </div>
     </>
   );

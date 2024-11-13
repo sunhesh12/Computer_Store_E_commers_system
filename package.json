@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "dompurify": "^3.2.0",
     "next": "15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028"
+    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
     "@types/node": "^20",

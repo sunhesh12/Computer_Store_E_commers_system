@@ -1,0 +1,62 @@
+<products>
+  <product>
+    <src>/laptop.png</src>
+    <model>HP LAPTOP 15-FD206TU CORE I5 13TH GEN</model>
+    <type>Lap Top</type>
+    <prize>300 000</prize>
+  </product>
+  <product>
+    <src>/laptop.png</src>
+    <model>DELL Inspiron 3501</model>
+    <type>Lap Top</type>
+    <prize>250 000</prize>
+  </product>
+  <product>
+    <src>/laptop.png</src>
+    <model>Apple MacBook Air M2</model>
+    <type>Lap Top</type>
+    <prize>450 000</prize>
+  </product>
+  <product>
+    <src>/laptop.png</src>
+    <model>Lenovo ThinkPad X1 Carbon</model>
+    <type>Lap Top</type>
+    <prize>500 000</prize>
+  </product>
+  <product>
+    <src>/laptop.png</src>
+    <model>Acer Predator Helios 300</model>
+    <type>Lap Top</type>
+    <prize>600 000</prize>
+  </product>
+  <product>
+    <src>/laptop.png</src>
+    <model>Asus ZenBook 14</model>
+    <type>Lap Top</type>
+    <prize>350 000</prize>
+  </product>
+  <product>
+    <src>/laptop.png</src>
+    <model>MSI GF63 Thin</model>
+    <type>Lap Top</type>
+    <prize>400 000</prize>
+  </product>
+  <product>
+    <src>/laptop.png</src>
+    <model>Razer Blade 15</model>
+    <type>Lap Top</type>
+    <prize>800 000</prize>
+  </product>
+  <product>
+    <src>/laptop.png</src>
+    <model>Microsoft Surface Laptop 4</model>
+    <type>Lap Top</type>
+    <prize>700 000</prize>
+  </product>
+  <product>
+    <src>/laptop.png</src>
+    <model>HP Spectre x360</model>
+    <type>Lap Top</type>
+    <prize>750 000</prize>
+  </product>
+</products>

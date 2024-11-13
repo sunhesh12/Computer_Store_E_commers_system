@@ -1,9 +1,10 @@
 "use client";
-
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { parseString } from "xml2js"; // Correct import for xml2js
 import style from "./page.module.css";
-import ImageSlider from "../../component/ImageSlider";
+import ImageSlider from "@/app/component/ImageSlider";
 import Card from "@/app/component/ItemCard/Card";
+import useFetchXml from "../../component/userFetchFiles/useFetchXml";
 
 export default function Page() {
   const img = [
@@ -16,46 +17,10 @@ export default function Page() {
     { src: "/bg-7.jpg", text: "Item 7", pl: "100px", pt: "100px" },
   ];
 
-  // Product data
-  const products = [
-    {
-      src: "/laptop.png",
-      model: "HP LAPTOP 15-FD206TU CORE I5 13TH GEN",
-      type: "Lap Top",
-      prize: "300 000",
-    },
-    {
-      src: "/laptop.png",
-      model: "DELL Inspiron 3501",
-      type: "Lap Top",
-      prize: "250 000",
-    },
-    {
-      src: "/laptop.png",
-      model: "HP LAPTOP 15-FD206TU CORE I5 13TH GEN",
-      type: "Lap Top",
-      prize: "300 000",
-    },
-    {
-      src: "/laptop.png",
-      model: "DELL Inspiron 3501",
-      type: "Lap Top",
-      prize: "250 000",
-    },
-    {
-      src: "/laptop.png",
-      model: "HP LAPTOP 15-FD206TU CORE I5 13TH GEN",
-      type: "Lap Top",
-      prize: "300 000",
-    },
-    {
-      src: "/laptop.png",
-      model: "DELL Inspiron 3501",
-      type: "Lap Top",
-      prize: "250 000",
-    },
-    // Add more products as needed...
-  ];
+  const { data: products, loading, error } = useFetchXml("/XmlFiles/products.xml");
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>{error}</div>;
 
   return (
     <div className={style.Mainwrapper}>
@@ -70,9 +35,13 @@ export default function Page() {
       <div className={style.mainWrapper}>
         <div className={style.writeClick}></div>
         <div className={style.CurtContainer}>
-        {products.map((product, index) => (
-          <Card key={index} productArray={products} index={index} />
-        ))}
+          {products && products.length > 0 ? (
+            products.map((product, index) => (
+              <Card key={index} productArray={products} index={index} />
+            ))
+          ) : (
+            <div>No products available</div> // Optional: Handle the case when products are empty
+          )}
         </div>
         <div className={style.writeClick}></div>
       </div>
