@@ -50,6 +50,8 @@ body::-webkit-scrollbar-track {
   width: 100vw;
   height: 60px;
   display: flex;
+  position: absolute;
+  z-index: 1;
 }
 
 .logo {
@@ -156,13 +158,16 @@ body::-webkit-scrollbar-track {
 
 
 .notitficationNumber {
-  width: 1.5%;
-  height: 3.5%;
+  width: max-content;
+  height: max-content;
+  min-width: 1.5%;
+  min-height: 33%;
   position: absolute;
   background-color: var(--myred);
   margin-left: 1%;
   margin-top: -1%;
   border-radius: 100%;
+  /* z-index: 10; */
 }
 
 .notitficationNumberText {
@@ -180,7 +185,8 @@ body::-webkit-scrollbar-track {
   align-items: center;
 }
 
-.footer h1 {
+.footer p {
+  margin-left: 10px;
   color: var(--mylightGray);
 }
 
@@ -190,6 +196,7 @@ body::-webkit-scrollbar-track {
 
 .sideNav {
   width: 15%;
+  margin-top: 60px;
 }
 
 .contain {

@@ -13,7 +13,7 @@ export default function customerLayout({
   return (
     <>
       <div className="container">
-        <div className="sideNav">
+        <div  className="sideNav">
           {Products.map((Products, index) => (
             <SideNavbar
               key={index}
